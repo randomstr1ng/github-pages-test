@@ -1,7 +1,9 @@
 baseURL = "https://randomstr1ng.github.io/github-pages-test/"
 languageCode = "en-us"
 title = "SAP Security Wiki"
-disableKinds = ["taxonomy"]
+relativeURLs = true
+canonifyURLs = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   description = "A YAML-driven SAP Security Wiki"
