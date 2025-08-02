@@ -1,6 +1,6 @@
 {
-  "name": "Mein Wiki",
-  "short_name": "Mein Wiki",
+  "name": "SAP Pentest Playbook",
+  "short_name": "SAP Pentest Playbook",
   "start_url": "/github-pages-test/",
   "scope": "/github-pages-test/",
   "display": "standalone",
