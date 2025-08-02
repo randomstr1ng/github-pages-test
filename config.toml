@@ -1,8 +1,0 @@
-baseURL = "https://randomstr1ng.github.io/sap-security-wiki-hugo/"
-languageCode = "en-us"
-title = "SAP Security Wiki"
-disableKinds = ["taxonomy"]
-
-[params]
-  description = "A YAML-driven SAP Security Wiki"
-  author = "Your Name"
