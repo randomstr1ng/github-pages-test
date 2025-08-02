@@ -1,0 +1,21 @@
+title: "From SAP to the Outside"
+description: "This section covers topics related to data and communication flowing from SAP systems to external systems."
+topics:
+  - name: "Data Export"
+    description: "How to securely export data from SAP systems."
+    best_practices:
+      - "Use encrypted connections for data transfer."
+      - "Implement strict access controls."
+      - "Log all export activities for auditing."
+  - name: "API Integration"
+    description: "Guidelines for integrating SAP APIs with external systems."
+    best_practices:
+      - "Use OAuth2 for API authentication."
+      - "Validate all incoming and outgoing data."
+      - "Monitor API usage to detect anomalies."
+  - name: "Third-Party Applications"
+    description: "Managing third-party applications that interact with SAP."
+    best_practices:
+      - "Conduct security assessments of third-party applications."
+      - "Limit permissions to only what is necessary."
+      - "Regularly update and patch third-party software."

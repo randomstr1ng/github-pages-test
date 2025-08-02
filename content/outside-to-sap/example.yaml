@@ -1,0 +1,9 @@
+title: "Example: Outside to SAP"
+description: "This section covers security aspects when external systems interact with SAP."
+topics:
+  - name: "Authentication Mechanisms"
+    details: "Overview of secure authentication methods for external systems accessing SAP."
+  - name: "API Security"
+    details: "Best practices for securing APIs exposed to external systems."
+  - name: "Network Security"
+    details: "Guidelines for securing network communication between external systems and SAP."
