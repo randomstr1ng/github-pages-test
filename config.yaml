@@ -2,6 +2,10 @@ baseURL: "https://randomstr1ng.github.io/github-pages-test/"
 languageCode: "en-us"
 title: "SAP Security Wiki"
 theme: "hugo-theme-docsy"
+module:
+  imports:
+    - path: github.com/google/docsy
+      disable: false
 params:
   mainSections:
     - "Outside to SAP"
