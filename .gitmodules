@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-docsy"]
+	path = themes/hugo-theme-docsy
+	url = https://github.com/google/docsy.git
