@@ -1,3 +1,0 @@
----
-title: SAP GUI Security
----

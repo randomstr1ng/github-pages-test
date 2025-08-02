@@ -1,3 +1,0 @@
----
-title: Outside of SAP
----
