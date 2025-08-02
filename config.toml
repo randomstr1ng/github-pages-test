@@ -4,6 +4,7 @@ title = "SAP Security Wiki"
 relativeURLs = true
 canonifyURLs = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
+outputs = { home = ["HTML"] }
 
 [params]
   description = "A YAML-driven SAP Security Wiki"
