@@ -3,36 +3,49 @@ layout: default
 permalink: /topics/:category/:topic.html
 ---
 
-{% assign cat = page.url | split: "/" | slice: 2, 1 | first %}
-{% assign topic_id = page.url | split: "/" | slice: 3, 1 | first | remove: ".html" %}
-{% assign topic_list = site.data[cat] %}
-{% assign topic = topic_list | where: "id", topic_id | first %}
+sidebar: true {% assign cat = page.url | split: "/" | slice: 2, 1 | first %} {%
+assign topic_id = page.url | split: "/" | slice: 3, 1 | first | remove: ".html"
+%} {% assign topic_list = site.data[cat] %} {% assign topic = topic_list |
+where: "id", topic_id | first %} {% if page.sidebar %}
+<aside>
+    <ul>
+        {% for category in site.data.sidebar %}
+        <li>
+            <strong>{{ category.category }}</strong>
+            <ul>
+                {% for topic in category.topics %}
+                <li><a href="{{ topic.link }}">{{ topic.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>
+{% endif %} {% if topic %}
+<h1>{{ topic.title }}</h1>
+<p><strong>Category:</strong> {{ topic.category }}</p>
+<p>{{ topic.description }}</p>
 
-{% if topic %}
-  <h1>{{ topic.title }}</h1>
-  <p><strong>Category:</strong> {{ topic.category }}</p>
-  <p>{{ topic.description }}</p>
-
-  <h2>Risks</h2>
-  <ul>
+<h2>Risks</h2>
+<ul>
     {% for risk in topic.risks %}
-      <li>{{ risk }}</li>
+    <li>{{ risk }}</li>
     {% endfor %}
-  </ul>
+</ul>
 
-  <h2>Recommendations</h2>
-  <ul>
+<h2>Recommendations</h2>
+<ul>
     {% for rec in topic.recommendations %}
-      <li>{{ rec }}</li>
+    <li>{{ rec }}</li>
     {% endfor %}
-  </ul>
+</ul>
 
-  <h2>References</h2>
-  <ul>
+<h2>References</h2>
+<ul>
     {% for ref in topic.references %}
-      <li><a href="{{ ref }}">{{ ref }}</a></li>
+    <li><a href="{{ ref }}">{{ ref }}</a></li>
     {% endfor %}
-  </ul>
+</ul>
 {% else %}
-  <p>Topic not found.</p>
+<p>Topic not found.</p>
 {% endif %}

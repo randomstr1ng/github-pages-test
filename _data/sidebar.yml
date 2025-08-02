@@ -1,0 +1,16 @@
+github-pages-test/_data/sidebar.yml
+```
+
+```
+- category: Categorie 1
+  topics:
+    - title: Topic 1
+      link: /categorie-1/topic-1
+    - title: Topic 2
+      link: /categorie-1/topic-2
+- category: Categorie 2
+  topics:
+    - title: Topic 1
+      link: /categorie-2/topic-1
+    - title: Topic 2
+      link: /categorie-2/topic-2
