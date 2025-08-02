@@ -1,0 +1,12 @@
+- id: rfc-calls
+  title: Outbound RFC Calls
+  category: From SAP to the Outside
+  description: Outbound integrations can be abused if misconfigured.
+  risks:
+    - Data exfiltration
+    - Command execution
+  recommendations:
+    - Use allowlists for destinations
+    - Monitor SM59 usage
+  references:
+    - https://example.com/outbound-sap

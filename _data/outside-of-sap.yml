@@ -1,0 +1,12 @@
+- id: public-endpoints
+  title: Public Endpoint Exposure
+  category: Outside of SAP
+  description: Risks from exposing SAP services directly to the internet.
+  risks:
+    - Unauthenticated access
+    - Enumeration attacks
+  recommendations:
+    - Restrict access via WAF/VPN
+    - Monitor Shodan
+  references:
+    - https://example.com/public-sap

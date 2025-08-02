@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /topics/:category/:topic.html
+---
+
+{% assign cat = page.url | split: "/" | slice: 2, 1 | first %}
+{% assign topic_id = page.url | split: "/" | slice: 3, 1 | first | remove: ".html" %}
+{% assign topic_list = site.data[cat] %}
+{% assign topic = topic_list | where: "id", topic_id | first %}
+
+{% if topic %}
+  <h1>{{ topic.title }}</h1>
+  <p><strong>Category:</strong> {{ topic.category }}</p>
+  <p>{{ topic.description }}</p>
+
+  <h2>Risks</h2>
+  <ul>
+    {% for risk in topic.risks %}
+      <li>{{ risk }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Recommendations</h2>
+  <ul>
+    {% for rec in topic.recommendations %}
+      <li>{{ rec }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>References</h2>
+  <ul>
+    {% for ref in topic.references %}
+      <li><a href="{{ ref }}">{{ ref }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Topic not found.</p>
+{% endif %}
