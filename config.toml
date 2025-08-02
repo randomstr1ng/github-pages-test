@@ -1,7 +1,7 @@
 baseURL = "https://randomstr1ng.github.io/sap-security-wiki-hugo/"
 languageCode = "en-us"
 title = "SAP Security Wiki"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [module]
   [[module.imports]]
