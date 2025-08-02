@@ -1,0 +1,15 @@
+{
+  "name": "Mein Wiki",
+  "short_name": "Mein Wiki",
+  "start_url": "/github-pages-test/",
+  "scope": "/github-pages-test/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/github-pages-test/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
