@@ -1,0 +1,10 @@
+baseURL = "https://your-username.github.io/sap-security-wiki-hugo/"
+languageCode = "en-us"
+title = "SAP Security Wiki"
+theme = "hugo-theme-learn"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  editURL = ""
+  description = "A YAML-driven SAP Security Wiki"
+  author = "Your Name"

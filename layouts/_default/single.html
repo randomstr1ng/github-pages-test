@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ $section := .Section }}
+  {{ $topicId := .File.BaseFileName }}
+  {{ $topic := index site.Data $section | where "id" $topicId | first }}
+  {{ if $topic }}
+    <h1>{{ $topic.title }}</h1>
+    <p><strong>Category:</strong> {{ $topic.category }}</p>
+    <p>{{ $topic.description }}</p>
+
+    <h2>Risks</h2>
+    <ul>
+      {{ range $topic.risks }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+
+    <h2>Recommendations</h2>
+    <ul>
+      {{ range $topic.recommendations }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+
+    <h2>References</h2>
+    <ul>
+      {{ range $topic.references }}
+        <li><a href="{{ . }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p>Topic not found.</p>
+  {{ end }}
+{{ end }}
