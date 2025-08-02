@@ -1,4 +1,4 @@
-baseURL = " https://randomstr1ng.github.io/github-pages-test/"
+baseURL = "https://randomstr1ng.github.io/github-pages-test/"
 languageCode = "en-us"
 title = "SAP Security Wiki"
 disableKinds = ["taxonomy"]
