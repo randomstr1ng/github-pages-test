@@ -1,8 +1,0 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "My Wiki"
-theme = "hugo-geekdoc"
-
-[params]
-  geekdocMenuBundle = true
-  geekdocSearch = true
