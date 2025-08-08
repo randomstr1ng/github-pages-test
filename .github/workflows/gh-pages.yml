@@ -16,6 +16,18 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup Node.js (for building theme assets)
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install Theme Dependencies & Build Assets
+        run: |
+          cd themes/hugo-geekdoc
+          npm install
+          npm run build
+          cd ../..
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
