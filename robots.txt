@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /tags/*
+
+Sitemap: https://randomstr1ng.github.io/github-pages-test/sitemap.xml
