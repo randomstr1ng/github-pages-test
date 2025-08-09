@@ -21,7 +21,7 @@ tag = "tags"
 
 [params]
 geekdocToC = 3
-geekdocLogo = "assets/logo.png"
+geekdocLogo = "cbas_logo.png"
 geekdocBackToTop = true
 geekdocNextPrev = false
 geekdocRepo = "https://github.com/randomstr1ng/github-pages-test"
