@@ -16,17 +16,17 @@ Thank you to all our supporters and sponsors for their help and support to allow
     <tr>
       <td style="border: none; padding: 10px;">
         <a href="https://www.no-monkey.com">
-          <img src="no_monkey.png" width="250" alt="NO MONKEY">
+          <img src="../../no_monkey.png" width="250" alt="NO MONKEY">
         </a>
       </td>
       <td style="border: none; padding: 10px;">
         <a href="https://www.securitybridge.com/">
-          <img src="securitybridge.png" width="250" alt="SecurityBridge">
+          <img src="../../securitybridge.png" width="250" alt="SecurityBridge">
         </a>
       </td>
       <td style="border: none; padding: 10px;">
         <a href="https://fortinet.com/">
-          <img src="fortinet.png" width="250" alt="Fortinet">
+          <img src="../../fortinet.png" width="250" alt="Fortinet">
         </a>
       </td>
     </tr>
