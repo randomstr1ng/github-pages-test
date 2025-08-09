@@ -7,6 +7,6 @@ weight: 1
 
 This project belongs to the [OWASP Core Business Application Security project](https://owasp.org/www-project-core-business-application-security/).
 
-{{< hint type=[warning] (icon=gdoc_fire) (title=Disclaimer) >}}
+{{< hint type=[important] >}}
 Make sure you have the appropriate permissions to actively scan and test applications. Without doing so, you might face legal implications
 {{< /hint >}}
