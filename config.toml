@@ -25,7 +25,7 @@ geekdocLogo = "cbas_logo.png"
 geekdocBackToTop = true
 geekdocNextPrev = false
 geekdocRepo = "https://github.com/randomstr1ng/github-pages-test"
-geekdocEditPath = "edit/main/content"
+geekdocEditPath = "edit/main"
 geekdocPageLastmod = true
 geekdocSearchShowParent = true
 
